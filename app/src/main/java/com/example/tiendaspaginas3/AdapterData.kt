@@ -24,6 +24,7 @@ class AdapterData(private val context: Context, private val categories: List<Cat
 
         holder.itemView.setOnClickListener {
             listener.onItemSelected(categoria)
+
         }
     }
 
