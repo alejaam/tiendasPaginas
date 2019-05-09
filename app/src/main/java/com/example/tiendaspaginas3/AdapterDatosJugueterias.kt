@@ -49,7 +49,7 @@ class AdapterDatosJugueterias(val context: Context, val jugueterias: List<Juguet
                     }
                     "Mi Alegria" -> {
                         val intent = Intent(itemView.context, VerPagina::class.java)
-                        intent.putExtra("Pagina","www.mialegria.com.mx")
+                        intent.putExtra("Pagina","http://www.mialegria.com.mx/home.html")
                         itemView.context.startActivity(intent)
                     }
                 }

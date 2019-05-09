@@ -15,16 +15,13 @@ class AdapterDatosHogar(val context: Context, val hogares: List<Hogar>) : Recycl
         val view = LayoutInflater.from(context).inflate(R.layout.item_list, p0, false)
         return MyViewHolder(view)
     }
-
     override fun getItemCount(): Int {
         return hogares.size
     }
-
     override fun onBindViewHolder(p0: AdapterDatosHogar.MyViewHolder, p1: Int) {
         val hogar = hogares[p1]
         p0.setData(hogar)
     }
-
     inner class MyViewHolder(itemView: View) : RecyclerView.ViewHolder(itemView){
         fun setData(categoria: Hogar?){
             itemView.txvTitle.text = categoria!!.title
@@ -56,5 +53,4 @@ class AdapterDatosHogar(val context: Context, val hogares: List<Hogar>) : Recycl
             }
         }
     }
-
 }
