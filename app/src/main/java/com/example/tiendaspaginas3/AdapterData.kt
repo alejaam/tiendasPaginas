@@ -29,6 +29,7 @@ class AdapterData(private val context: Context, private val categories: List<Cat
     }
 
     inner class MyViewHolder(itemView: View) : RecyclerView.ViewHolder(itemView) {
+
         val txvTitle: TextView = itemView.findViewById(R.id.txvTitle)
     }
 }

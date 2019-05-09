@@ -2,26 +2,22 @@ package com.example.tiendaspaginas3
 
 data class Categoria(var title:String)
 data class Deporte(var title:String)
-object Supplier {
+data class Joyeria(var title:String)
+data class Hogar(var title:String)
+data class Accesorio(var title:String)
+data class Ropa(var title:String)
+data class Jugueteria(var title:String)
+
+object Categories {
     val categorias = listOf<Categoria>(
         Categoria("Deportes"),
         Categoria("Joyerias"),
-        Categoria("Bebes"),
-        Categoria("Montañismo"),
         Categoria("Hogar"),
-        Categoria("Electronicos"),
         Categoria("Accesorios"),
         Categoria("Ropa"),
-        Categoria("Deportes"),
-        Categoria("Joyerias"),
-        Categoria("Bebes"),
-        Categoria("Montañismo"),
-        Categoria("Hogar"),
-        Categoria("Electronicos"),
-        Categoria("Accesorios"),
-        Categoria("Ropa")
+        Categoria("Jugueterias")
     )
-object SupplierTwo {
+object Deportes {
         val deportes = listOf<Deporte>(
             Deporte("Nike"),
             Deporte("Adidas"),
@@ -30,4 +26,48 @@ object SupplierTwo {
             Deporte("Rebook")
         )
     }
+    object Joyeraias {
+        val joyerias = listOf<Joyeria>(
+            Joyeria("Gucci"),
+            Joyeria("Graff"),
+            Joyeria("Bvlgari"),
+            Joyeria("Cristal")
+        )
+    }
+    object Hogares {
+        val hogar = listOf<Hogar>(
+            Hogar("Home Deppot"),
+            Hogar("Walmart"),
+            Hogar("Linio"),
+            Hogar("Liverpool")
+        )
+    }
+
+    object Accesorios {
+        val accesorios = listOf<Accesorio>(
+            Accesorio("Steren"),
+            Accesorio("AliExpress"),
+            Accesorio("Amazon"),
+            Accesorio("Ebay"),
+            Accesorio("Mercado Libre")
+        )
+    }
+    object Ropas {
+        val ropas = listOf<Ropa>(
+            Ropa("Bershka"),
+            Ropa("Pull&Bear"),
+            Ropa("ZARA"),
+            Ropa("Stradivarius"),
+            Ropa("FOREVER 21")
+        )
+    }
+    object Jugueterias {
+        val jugueterias = listOf<Jugueteria>(
+            Jugueteria("Lego"),
+            Jugueteria("Hasbro"),
+            Jugueteria("Mattel"),
+            Jugueteria("Mi Alegria")
+            )
+    }
+
 }
